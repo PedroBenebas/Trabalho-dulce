@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    font-family: 'Times New Roman', Times, serifs;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: white;
+}
+
+#começo{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+}
+
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.botoes-header{
+    text-decoration: none;
+    background-color: white;
+    transition: background-color 0.6s ease, border 0.3s ease, color 0.3S ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+    color: black;
+}
+.botoes-header:hover{
+    background-color: #4286C3;
+    border: 1px solid black ;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+
+.titulo{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.titulo:hover{
+    transform: scale(1.1);
+}
+
+#pesquisar{
+    background-image: url(imagens/16492.png);
+    background-size: 15px;
+    background-position: 94% center;
+    background-repeat: no-repeat; 
+    font-size: 15px;
+    padding: 8px 40px 8px 5px;
+    border: 1px solid gray;
+    margin-right: 330px;
+    transition: transform 0.3s ease;
+}
+#pesquisar:hover{
+    transform: scale(1.1);
+}
+
+#titulo{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#botao-entrar{
+    background-image: url(imagens/login-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 87% center;
+    padding: 8px 35px 8px 15px;
+    margin-left: 300px;
+    font-size: 20px;
+}
+#botao-cadastrar{
+    background-image: url(imagens/cadastro-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 94% center;
+    padding: 8px 35px 8px 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-right: 0;
+}
+
+.hr{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-botao{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    color: black;
+    transition: transform 0.3s ease, font-size 0.4s ease, color 0.4s ease, background-color 0.3s ease, border 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 7px 6px;
+    margin: 5px 55px;
+}
+.nav-botao:hover{
+    background-color: #4287c3a4;
+    color: white;
+    transform: scale(1.2);
+    font-size: 15px; 
+    border: 1px solid black;  
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 20px 0;
+}
+
+#imagem{
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 500px;
+    height: auto;
+}
+#imagem:hover{
+    transform: scale(1,1);
+    box-shadow: 0 0 10px gray;
+}
+
+#descrição-produto{
+    width: 40%;
+    height: auto;
+    padding: 0px 20px;
+}
+
+#container-contador{
+    background-color: #ff691e;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#oferta{
+    margin: 0;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contador{
+    font-family: 'Trebuchet MS', sans-serif;  
+    font: bold;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+#preço{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #13ABE1;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#botoes{
+    align-items: center;
+    display: flex;
+}
+
+#botao-comprar{
+    padding: 8px 35px;
+    font-size: 25px;
+    background-color: #ff691e;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+#botao-comprar:hover{
+    background-color: #ff691ec0 ;
+}
+
+#inserir-cep{
+    font-family: Calibri;
+    height: 35px;
+    font-size: 20px;
+    width: 157px;
+    padding: 5px 0 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+
+#botao-cep{
+    padding: 9px 35px;
+    font-size: 25px;
+    background-color: #0091ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#botao-cep:hover{
+    background-color: #0090eab7;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#descrição{
+    width: 1150px;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+del{
+    font-size: 20px;
+    color: #8C8C8C;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #13ABE1;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+    
+
+h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+

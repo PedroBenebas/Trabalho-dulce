@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coçador-roxo.css">    
+</head>
+<body>
+    <div id="começo">
+        A MAIOR PROMOÇÃO DA HISTÓRIA DA SAINT MAXIM |
+         SEMANA DO CONSUMIDOR | 
+            Modelos até 70%OFF + frete grátis e acima de R$ 50,00 ganhe 01 pulseira de BRINDE
+    </div>
+    <header>
+        <div>
+        <input type="text" id="pesquisar" placeholder="O que você procura?">
+    </div>
+        <div id="titulo">
+            <a href="index.html" class="titulo"><h1>Saint Maxim</h1></a>
+        </div>
+        <div>
+            <a href="index.html" class="botoes-header" id="botao-entrar">Entrar</a>
+        </div>
+        <div>
+            <a href="index.html" class="botoes-header" id="botao-cadastrar">Cadastrar-se</a>
+        </div>
+    </header>   
+    <hr>
+    <nav>
+        <div>
+            <input class="nav-botao" type="submit" value="Para você ▼"></a>
+        </div>
+        <div>
+            <input class="nav-botao" type="button" value="Categorias ▼">
+        </div>
+        <div>
+            <input class="nav-botao" type="button" value="Compare">
+        </div>
+        <div>
+            <input class="nav-botao" type="button" value="Descontos">
+        </div>
+        <div>
+            <input class="nav-botao" type="button" value="Para sua empresa">
+        </div>
+    </nav>
+    <hr>
+    <main>
+        <div id="imagem-coçador">
+            <img src="imagens/coçador-roxo.jpeg" alt="" id="imagem">
+        </div>
+        <div id="descrição-produto">
+            <div id="container-contador">
+                <div>
+                <h3 id="oferta">Oferta do dia!</h3>
+                Aproveite! termina em:
+            </div>
+                <div id="contador">
+                    <p id="contador"></p>
+                </div>
+            </div> <!--fim-container-produto-->
+            <h1>Coçador Roxo</h1>
+            <img src="imagens/3794_frete-gratis.gif" id="gif">
+            <br>
+            <br>
+            <del>
+                R$39,99
+            </del>
+            <H2>
+                R$29,99
+            </H2>
+            <p id="preço">até 2x de R$14,99 sem <br>
+                juros
+            </p>
+                <div class="div-botao-comprar">
+                    <a href="" id="botao-comprar">Comprar</a>
+                </div>  
+                <div class="input-cep">
+                    <h5>Consulte o prazo de entrega</h5> <br>
+                <input type="number" placeholder="Insira o CEP" id="inserir-cep">
+                <input type="button" id="botao-cep" value="Consultar">
+                </div>
+                <div id="texto"></div>
+        </div> <!--descrição-produto-->
+    </main>
+
+    <aside>
+        <div id="descrição">
+        <h3>Descrição do produto</h3>
+        <p>
+            Descubra uma nova dimensão de conforto e relaxamento com o inovador "Coçador de Costas Roxo". 
+            Desenvolvido meticulosamente com materiais de alta qualidade e um design ergonômico, nosso produto proporciona 
+            uma experiência de coceira luxuosa e incomparável.
+        </p>
+        <p>
+            Com uma variedade de opções de ajuste e texturas suaves, nosso coçador de costas é projetado para alcançar até os lugares 
+            mais difíceis, oferecendo alívio instantâneo e uma sensação de bem-estar sem precedentes.
+        </p>
+        <p>
+            Diga adeus às coceiras indesejadas e entregue-se a momentos de puro conforto com o "Coçador de Costas Roxo".
+             Garanta já o seu e transforme sua rotina de autocuidado em uma verdadeira jornada de indulgência.
+        </p>
+    </div>
+    </aside>
+
+    <footer>
+        <h3>Todos os direitos reservados ©️</h3>
+    </footer>
+
+    <script>
+        // Obtém o elemento do contador
+        const contadorElemento = document.getElementById('contador');
+      
+        // Define o tempo inicial em segundos (24 horas)
+        let tempoTotalSegundos = 24 * 60 * 60;
+      
+        // Atualiza o contador a cada segundo
+        const timer = setInterval(function() {
+          // Verifica se o tempo chegou a zero
+          if (tempoTotalSegundos <= 0) {
+            clearInterval(timer); // Para o contador
+            contadorElemento.textContent = 'Tempo esgotado!';
+          } else {
+            // Calcula as horas, minutos e segundos restantes
+            const horas = Math.floor(tempoTotalSegundos / 3600);
+            const minutos = Math.floor((tempoTotalSegundos % 3600) / 60);
+            const segundos = tempoTotalSegundos % 60;
+      
+            // Formata o tempo restante como "hh:mm:ss"
+            const tempoFormatado = `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+      
+            // Atualiza o conteúdo do elemento do contador com o tempo restante formatado
+            contadorElemento.textContent = tempoFormatado;
+      
+            // Decrementa o tempo total de segundos
+            tempoTotalSegundos--;
+          }
+        }, 1000); // Atualiza a cada segundo
+    
+         // Obtém o elemento do botão de consultar
+         const botaoConsultar = document.getElementById('botao-cep');
+        const textoConsultar = "3 à 5 dias úteis.";
+
+        // Adiciona um evento de clique ao botão de consultar
+        botaoConsultar.addEventListener('click', function() {
+            // Obtém o elemento do texto
+            const textoElemento = document.getElementById('texto');
+            // Define o conteúdo do elemento de texto como o textoConsultar
+            textoElemento.textContent = textoConsultar;
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    font-family: 'Times New Roman', Times, serifs;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: white;
+}
+
+#começo{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+}
+
+
+
+
+.botoes-header{
+    text-decoration: none;
+    background-color: white;
+    transition: background-color 0.6s ease, border 0.3s ease, color 0.3S ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+    color: black;
+}
+.botoes-header:hover{
+    background-color: #4286C3;
+    border: 1px solid black ;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+
+.titulo{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.titulo:hover{
+    transform: scale(1.1);
+}
+
+#pesquisar{
+    background-image: url(imagens/16492.png);
+    background-size: 15px;
+    background-position: 94% center;
+    background-repeat: no-repeat; 
+    font-size: 15px;
+    padding: 8px 40px 8px 5px;
+    border: 1px solid gray;
+    margin-right: 330px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#pesquisar:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+
+#titulo{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#botao-entrar{
+    background-image: url(imagens/login-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 87% center;
+    padding: 8px 35px 8px 15px;
+    margin-left: 300px;
+    font-size: 20px;
+}
+#botao-cadastrar{
+    background-image: url(imagens/cadastro-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 94% center;
+    padding: 8px 35px 8px 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-right: 0;
+}
+
+.hr{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-botao{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    color: black;
+    transition: transform 0.3s ease, font-size 0.4s ease, color 0.4s ease, background-color 0.3s ease, border 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 7px 6px;
+    margin: 5px 55px;
+}
+.nav-botao:hover{
+    background-color: #4287c3a4;
+    color: white;
+    transform: scale(1.2);
+    font-size: 15px; 
+    border: 1px solid black;  
+}
+
+.img-capa{
+    justify-content: center;    
+    display: flex;
+    margin: 0;
+}
+
+#img-principal{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+main{
+    background-color: rgba(128, 128, 128, 0.188);
+    width: 100%;
+}
+
+.background-main{
+    width: 100%;
+    margin: 0;
+    display: flex;  
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px 50px 10px;
+}
+
+.semana-consumidor{
+    margin: 0;
+    padding: 0;
+}
+
+.container-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 8px 8px;
+    margin: 20px;
+}
+
+.mao{
+    border: none;
+    width: auto;
+    height: auto;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: #4286C3;
+    color: white;
+    text-decoration: none;
+}
+.mao:hover{
+    box-shadow: 0px 0px 30px  rgba(0, 0, 0, 0.5);
+}
+
+.imagens-produto{
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.imagens-produto:hover{
+    transform: scale(0.9);
+}
+
+.background-branco{
+    background-color: white;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-produto{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}

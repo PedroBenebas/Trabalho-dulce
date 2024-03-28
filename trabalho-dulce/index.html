@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Saint Maxim</title>
+</head>
+<body>
+    <div id="começo">
+        A MAIOR PROMOÇÃO DA HISTÓRIA DA SAINT MAXIM |
+         SEMANA DO CONSUMIDOR | 
+            Modelos até 70%OFF + frete grátis e acima de R$ 50,00 ganhe 01 pulseira de BRINDE
+    </div>
+    <header>
+        <div>
+        <input type="text" id="pesquisar" placeholder="O que você procura?">
+    </div>
+        <div id="titulo">
+            <a href="index.html" class="titulo"><h1>Saint Maxim</h1></a>
+        </div>
+        <div>
+            <a href="login.html" class="botoes-header" id="botao-entrar">Entrar</a>
+        </div>
+        <div>
+            <a href="login.html" class="botoes-header" id="botao-cadastrar">Cadastrar-se</a>
+        </div>
+    </header>
+<hr class="hr">    
+<nav>
+    <div>
+        <input class="nav-botao" type="submit" value="Para você ▼"></a>
+    </div>
+    <div>
+        <input class="nav-botao" type="button" value="Categorias ▼">
+    </div>
+    <div>
+        <input class="nav-botao" type="button" value="Compare">
+    </div>
+    <div>
+        <input class="nav-botao" type="button" value="Descontos">
+    </div>
+    <div>
+        <input class="nav-botao" type="button" value="Não perca">
+    </div>
+</nav>
+<hr>
+<div class="img-capa">
+    <img src="imagens/mãozinha-fundo.png" alt="" id="img-principal">
+</div>
+    <main>
+        <div class="background-main">
+            <div class="semana-consumidor">
+                <h1>SEMANA DO CONSUMIDOR</h1>
+                <div> Modelos até 70%OFF + FRETE GRÁTIS</div>
+            </div>
+        </div>
+        <div class="background">
+            <div class="background-branco">
+                <div class="container-produtos">
+                    <div class="mao">
+                        <a href="coçador-premium.html" class="a-produto">
+                        <img src="imagens/coçador-principal.jpg" alt="" class="imagens-produto" >
+                        <p>Coçador premium</p>
+                        <h5>R$34,99</h5>
+                        </a>
+                    </div>
+
+                    <div class="mao">
+                        <a href="coçador-roxo.html" class="a-produto">
+                        <img src="imagens/coçador-roxo.jpeg" alt="" class="imagens-produto" >
+                        <p>Coçador roxo</p>
+                        <h5>R$29,99</h5>
+                        </a>
+                    </div>
+
+                    <div class="mao">
+                        <a href="coçador-cinza.html" class="a-produto">
+                        <img src="imagens/coçador-cinza.jpg" alt="" class="imagens-produto" >
+                        <p>Coçador Cinza</p>
+                        <h5>R$29,99</h5>
+                        </a>
+                    </div>
+
+                    <div class="mao">
+                        <a href="coçador-amarelo.html" class="a-produto">
+                        <img src="imagens/coçador-amarelo.jpg" alt="" class="imagens-produto" >
+                        <p>Coçador amarelo</p>
+                        <h5>R$29,99</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Todos os direitos reservados ©️</h3>
+    </footer>
+
+    <script>
+const inputTexto = document.getElementById('pesquisar');
+
+// Adiciona um evento de escuta de teclado ao campo de entrada
+inputTexto.addEventListener('keydown', function(event) {
+  // Verifica se a tecla pressionada é Enter (código 13)
+  if (event.key === 'Enter') {
+    // Define a posição específica para rolar
+    const posicaoEspecifica = 850; // Ajuste este valor conforme necessário
+
+    // Rola a página para a posição específica
+    window.scrollTo({
+      top: posicaoEspecifica,
+      behavior: 'smooth' // Rolagem suave
+    });
+
+    // Evita o comportamento padrão de submissão do formulário
+    event.preventDefault();
+  }
+});
+    </script>
+</body>
+</html>
